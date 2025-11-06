@@ -47,6 +47,12 @@ To ensure that contributions maintain Scaff's philosophy, your pull request will
     
 -   **Generic Configuration:** Initial configurations should be minimalist and designed to be applicable to any type of project without imposing specific technologies.
 
+
+
 # Typescript Templates
+
+>These are not literal implementations of clean architectures, but rather simplifications. Therefore, many elements have been intentionally sacrificed.
+
+**Explore the different templates and read their descriptions to understand!**
 
 [Clean Arquitecture](https://github.com/aten039/scaff/edit/main/README.md)
