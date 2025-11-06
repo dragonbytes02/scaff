@@ -3,7 +3,6 @@ package layout
 import (
 	"aten039/scaff/internal/components/menu"
 	msgs "aten039/scaff/internal/msg"
-	"aten039/scaff/internal/scripts"
 
 	"github.com/charmbracelet/bubbles/spinner"
 	tea "github.com/charmbracelet/bubbletea"
@@ -28,8 +27,7 @@ func (m AppModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 	case msgs.RunningScriptMsg:
 		m.state = RunningScript
-		cmd := scripts.GetScript(msg.Script)
-		return m, tea.Batch(m.runScript(cmd), m.Spinner.Tick)
+		return m, tea.Batch(m.runScript(msg.Script, m.name_project), m.Spinner.Tick)
 
 	case msgs.ScriptErrorMsg:
 		m.state = ScriptError

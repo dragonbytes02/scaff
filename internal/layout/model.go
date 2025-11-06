@@ -21,6 +21,7 @@ const (
 )
 
 type AppModel struct {
+	name_project   string
 	state          AppState
 	ScriptError    string
 	ScriptFinished string
@@ -31,17 +32,18 @@ type AppModel struct {
 	Spinner        spinner.Model
 }
 
-func InitialApp() AppModel {
+func InitialApp(name string) AppModel {
 	s := spinner.New()
 	s.Spinner = spinner.Dot
 	// s.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
 
 	return AppModel{
-		state:       0,
-		Language:    language.InitialLanguageModel(),
-		Paradigm:    javascript.InitialParadigmModel(),
-		JsPoo:       javascript.InitialJsPooModel(),
-		JsFuntional: javascript.InitialjsfuntionalModel(),
-		Spinner:     s,
+		name_project: name,
+		state:        0,
+		Language:     language.InitialLanguageModel(),
+		Paradigm:     javascript.InitialParadigmModel(),
+		JsPoo:        javascript.InitialJsPooModel(),
+		JsFuntional:  javascript.InitialjsfuntionalModel(),
+		Spinner:      s,
 	}
 }
