@@ -55,4 +55,4 @@ To ensure that contributions maintain Scaff's philosophy, your pull request will
 
 **Explore the different templates and read their descriptions to understand!**
 
-[Clean Arquitecture](https://github.com/aten039/scaff/edit/main/README.md)
+[Clean Arquitecture](https://github.com/dragonbytes02/scaff/edit/main/README.md)

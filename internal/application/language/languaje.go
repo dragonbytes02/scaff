@@ -1,8 +1,8 @@
 package language
 
 import (
-	"aten039/scaff/internal/components/menu"
-	"aten039/scaff/internal/msg"
+	"dragonbytes02/scaff/internal/components/menu"
+	"dragonbytes02/scaff/internal/msg"
 )
 
 var LanguagesOptions = []menu.OptionsInfo{

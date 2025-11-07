@@ -1,8 +1,8 @@
 package layout
 
 import (
-	"aten039/scaff/internal/msg"
-	"aten039/scaff/internal/scripts"
+	"dragonbytes02/scaff/internal/msg"
+	"dragonbytes02/scaff/internal/scripts"
 	"time"
 
 	tea "github.com/charmbracelet/bubbletea"

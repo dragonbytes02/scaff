@@ -1,9 +1,9 @@
 package layout
 
 import (
-	"aten039/scaff/internal/application/javascript"
-	"aten039/scaff/internal/application/language"
-	"aten039/scaff/internal/components/menu"
+	"dragonbytes02/scaff/internal/application/javascript"
+	"dragonbytes02/scaff/internal/application/language"
+	"dragonbytes02/scaff/internal/components/menu"
 
 	"github.com/charmbracelet/bubbles/spinner"
 )

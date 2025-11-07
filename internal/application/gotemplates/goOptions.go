@@ -1,9 +1,9 @@
 package gotemplates
 
 import (
-	"aten039/scaff/internal/components/menu"
-	"aten039/scaff/internal/msg"
-	"aten039/scaff/internal/scripts"
+	"dragonbytes02/scaff/internal/components/menu"
+	"dragonbytes02/scaff/internal/msg"
+	"dragonbytes02/scaff/internal/scripts"
 )
 
 var goOptions = []menu.OptionsInfo{

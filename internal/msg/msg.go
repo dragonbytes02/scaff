@@ -1,6 +1,6 @@
 package msg
 
-import "aten039/scaff/internal/scripts"
+import "dragonbytes02/scaff/internal/scripts"
 
 type ChangeToLanguageMsg struct{}
 type ChangeToParadigmMsg struct{}

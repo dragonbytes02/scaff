@@ -1,8 +1,8 @@
 package layout
 
 import (
-	"aten039/scaff/internal/components/menu"
-	msgs "aten039/scaff/internal/msg"
+	"dragonbytes02/scaff/internal/components/menu"
+	msgs "dragonbytes02/scaff/internal/msg"
 
 	"github.com/charmbracelet/bubbles/spinner"
 	tea "github.com/charmbracelet/bubbletea"

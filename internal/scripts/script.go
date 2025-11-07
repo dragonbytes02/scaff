@@ -5,7 +5,6 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
-	"time"
 )
 
 // TemplateOptions contiene toda la información para crear y configurar la plantilla.
@@ -14,33 +13,22 @@ type Script struct {
 	Url  string
 }
 
-// Run_CreateTemplate ejecuta todo el proceso.
-// Esta es la función principal que llamarías desde tu TUI.
 func (j Script) Execute() error {
 
-	// --- 1. Clonar el repositorio ---
 	fmt.Printf("Clonando %s en %s...\n", j.Url, j.Name)
-	// Creamos el comando "git clone <url> <carpeta>"
+
 	cmd := exec.Command("git", "clone", j.Url, j.Name)
 
-	time.Sleep(3 * time.Second)
-	// Ejecutamos el comando. 'CombinedOutput' captura lo que se imprime
-	// en la terminal (stdout y stderr) por si hay un error.
 	if output, err := cmd.CombinedOutput(); err != nil {
-		// Si hay un error, lo devolvemos junto con la salida de git
+
 		return fmt.Errorf("error al clonar: %v\nSalida de Git: %s", err, string(output))
 	}
 
-	// --- 2. Eliminar la carpeta .git ---
-	fmt.Println("Repositorio clonado. Eliminando la carpeta .git...")
 	gitDir := filepath.Join(j.Name, ".git")
 
-	// Usamos os.RemoveAll para borrar la carpeta .git y todo su contenido.
-	// Esto es el equivalente a 'rmdir /s /q' del .bat, pero multiplataforma.
 	if err := os.RemoveAll(gitDir); err != nil {
 		return fmt.Errorf("error al eliminar .git: %v", err)
 	}
-	fmt.Println("Carpeta .git eliminada.")
 
 	// // --- 3. Configurar la plantilla (Buscar y Reemplazar) ---
 	// if len(opts.Placeholders) > 0 {
