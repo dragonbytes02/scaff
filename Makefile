@@ -13,3 +13,7 @@ run:
 ##brun: build and run
 .PHONY: brun
 brun: build run
+
+.PHONY: clean
+clean: 
+	rmdir /S /Q project
