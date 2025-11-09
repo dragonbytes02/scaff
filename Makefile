@@ -8,7 +8,7 @@ build:
 ##run: execute bin with create command
 .PHONY: run
 run:
-	./bin/scaff.exe create
+	./bin/scaff.exe create project
 
 ##brun: build and run
 .PHONY: brun

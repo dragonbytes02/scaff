@@ -15,15 +15,14 @@ import (
 // createCmd represents the create command
 var createCmd = &cobra.Command{
 	Use:   "create",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "create a project",
+	Long:  `Create a project by passing the name as a parameter; if you don't pass a positional parameter as the name, it will fail!`,
+	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		p := tea.NewProgram(layout.InitialApp("nombre del proyecto"))
+
+		projectName := args[0]
+
+		p := tea.NewProgram(layout.InitialApp(projectName))
 		if _, err := p.Run(); err != nil {
 			fmt.Printf("Alas, there's been an error: %v", err)
 			os.Exit(1)
