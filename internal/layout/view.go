@@ -17,6 +17,7 @@ func (m AppModel) View() string {
 	case LanguageModel:
 		return m.Language.View()
 
+	//Javascript
 	case ParadigmModel:
 		return m.Paradigm.View()
 
@@ -25,6 +26,10 @@ func (m AppModel) View() string {
 
 	case JsFuntional:
 		return m.JsFuntional.View()
+
+	//Go
+	case GoOptions:
+		return m.GoOptions.View()
 
 	default:
 		return "unknown error"

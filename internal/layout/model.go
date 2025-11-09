@@ -1,6 +1,7 @@
 package layout
 
 import (
+	Go "dragonbytes02/scaff/internal/application/go"
 	"dragonbytes02/scaff/internal/application/javascript"
 	"dragonbytes02/scaff/internal/application/language"
 	"dragonbytes02/scaff/internal/components/menu"
@@ -18,6 +19,7 @@ const (
 	RunningScript
 	ScriptError
 	ScriptFinished
+	GoOptions
 )
 
 type AppModel struct {
@@ -29,7 +31,9 @@ type AppModel struct {
 	Paradigm       menu.Model
 	JsPoo          menu.Model
 	JsFuntional    menu.Model
-	Spinner        spinner.Model
+	GoOptions      menu.Model
+
+	Spinner spinner.Model
 }
 
 func InitialApp(name string) AppModel {
@@ -44,6 +48,7 @@ func InitialApp(name string) AppModel {
 		Paradigm:     javascript.InitialParadigmModel(),
 		JsPoo:        javascript.InitialJsPooModel(),
 		JsFuntional:  javascript.InitialjsfuntionalModel(),
+		GoOptions:    Go.InitialGoOptionModel(),
 		Spinner:      s,
 	}
 }

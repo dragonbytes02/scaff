@@ -43,6 +43,7 @@ func (m AppModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		m.state = LanguageModel
 		return m, nil
 
+	//Javascript
 	case msgs.ChangeToParadigmMsg:
 		m.state = ParadigmModel
 		return m, nil
@@ -53,6 +54,10 @@ func (m AppModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 	case msgs.ChangeToJsFuntionalMsg:
 		m.state = JsFuntional
+		return m, nil
+
+	case msgs.ChangeToGoOptionsMsg:
+		m.state = GoOptions
 		return m, nil
 	}
 
@@ -76,6 +81,10 @@ func (m AppModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case JsFuntional:
 		newJsFuntional, cmd := m.JsFuntional.Update(msg)
 		m.JsFuntional = newJsFuntional.(menu.Model)
+		return m, cmd
+	case GoOptions:
+		newGoOptions, cmd := m.GoOptions.Update(msg)
+		m.GoOptions = newGoOptions.(menu.Model)
 		return m, cmd
 	}
 

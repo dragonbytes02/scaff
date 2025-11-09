@@ -1,4 +1,4 @@
-package gotemplates
+package Go
 
 import (
 	"dragonbytes02/scaff/internal/components/menu"
@@ -6,14 +6,14 @@ import (
 	"dragonbytes02/scaff/internal/scripts"
 )
 
-var goOptions = []menu.OptionsInfo{
+var GoOptions = []menu.OptionsInfo{
 	{Description: "Clean Arquitecture", Msg: msg.RunningScriptMsg{Script: scripts.GoClean}},
 	{Description: "Hexagonal Arquitecture", Msg: msg.RunningScriptMsg{Script: scripts.GoHexa}},
 	{Description: "Modular Clean", Msg: msg.RunningScriptMsg{Script: scripts.GoMC}},
 	{Description: "ELM", Msg: msg.RunningScriptMsg{Script: scripts.GoEML}},
 }
 
-func InitialJsPooModel() menu.Model {
+func InitialGoOptionModel() menu.Model {
 
-	return menu.InitialModel(goOptions)
+	return menu.InitialModel(GoOptions)
 }
