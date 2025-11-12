@@ -15,5 +15,5 @@ var GoOptions = []menu.OptionsInfo{
 
 func InitialGoOptionModel() menu.Model {
 
-	return menu.InitialModel(GoOptions)
+	return menu.InitialModel(GoOptions, "select template")
 }

@@ -4,28 +4,23 @@ import "fmt"
 
 func (m Model) View() string {
 	// The header
-	s := "\nselect your language?\n\n"
-
+	header := HeaderStyle.Render("SCAFF")
+	header += " pragmatic architectures"
 	// Iterate over our choices
+	body := TitleStyle.Render(m.title)
 	for i, choice := range m.choices {
 
 		cursor := " "
 		if m.cursor == i {
-			cursor = ">"
+			cursor = CursorStyle.Render("> ")
 		}
 
-		// // Is this choice selected?
-		// checked := " " // not selected
-		// if _, ok := m.selected[i]; ok {
-		// 	checked = "x" // selected!
-		// }
-		// Render the row
-		s += fmt.Sprintf("%s %s\n", cursor /*checked,*/, choice.Description)
+		body += BodyStyle.Render(fmt.Sprintf("\n%s%s", cursor /*checked,*/, choice.Color.Render(choice.Description)))
 	}
 
 	// The footer
-	s += "\nPress q to quit.\n"
+	footer := FooterStyle.Render(fmt.Sprintf("Press %s to Exit\n", ColorExit.Render("Q")))
 
 	// Send the UI for rendering
-	return s
+	return fmt.Sprintf("\n%s \n%s \n%s", header, ContainerStyle.Render(body), footer)
 }

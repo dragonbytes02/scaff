@@ -18,4 +18,4 @@ clean:
 
 ##brun: build, run and clean
 .PHONY: dev
-brun: build run clean
+dev: build run clean

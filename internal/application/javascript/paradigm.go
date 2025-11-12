@@ -12,5 +12,5 @@ var LanguagesOptions = []menu.OptionsInfo{
 
 func InitialParadigmModel() menu.Model {
 
-	return menu.InitialModel(LanguagesOptions)
+	return menu.InitialModel(LanguagesOptions, "select paradigm")
 }

@@ -15,5 +15,5 @@ var jsPooOptions = []menu.OptionsInfo{
 
 func InitialJsPooModel() menu.Model {
 
-	return menu.InitialModel(jsPooOptions)
+	return menu.InitialModel(jsPooOptions, "select template")
 }

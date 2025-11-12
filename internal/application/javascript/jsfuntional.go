@@ -15,5 +15,5 @@ var jsfuntionalOptions = []menu.OptionsInfo{
 
 func InitialjsfuntionalModel() menu.Model {
 
-	return menu.InitialModel(jsfuntionalOptions)
+	return menu.InitialModel(jsfuntionalOptions, "select template")
 }
