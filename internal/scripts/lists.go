@@ -8,7 +8,7 @@ type IScript interface {
 
 const (
 	// JavaScript Funcional
-	JsFuntionalClean ScriptApp = iota // 0 (creal arquitecture)
+	JsFuntionalClean ScriptApp = iota // 0 (clean arquitecture)
 	JsFuntionalHexa                   // 1 (Arquitectura Hexagonal)
 	JsFuntionalMcs                    // 2 (model controller services)
 	JsFuntionalMC                     // 3 (Modular clean)
@@ -20,10 +20,9 @@ const (
 	JsPooMC    // 7
 
 	// Go
-	GoClean // 8
-	GoHexa  // 9
-	GoMC    // 11 (Microservices/Microcomponents)
-	GoMcs   // 10 (Model-View-Controller)
+	GoHexa // 8
+	GoMcs  // 9
+	GoMC   // 10
 )
 
 var ScriptsDetailsUrls = map[ScriptApp]string{
@@ -38,6 +37,6 @@ var ScriptsDetailsUrls = map[ScriptApp]string{
 	JsPooMcs:   "https://github.com/dragonbytes02/js-mcs-poo-template.git",
 
 	GoHexa: "https://github.com/dragonbytes02/go-hexagonal-template.git",
-	GoMC:   "https://github.com/dragonbytes02/go-modularclean-template.git",
 	GoMcs:  "https://github.com/dragonbytes02/go-mcs-template.git",
+	GoMC:   "https://github.com/dragonbytes02/go-modularclean-template.git",
 }

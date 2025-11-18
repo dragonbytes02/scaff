@@ -1,4 +1,4 @@
-package layout
+package app
 
 import (
 	"dragonbytes02/scaff/internal/components/menu"

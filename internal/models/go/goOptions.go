@@ -9,7 +9,7 @@ import (
 var GoOptions = []menu.OptionsInfo{
 	{Description: "Hexagonal Arquitecture", Msg: msg.RunningScriptMsg{Script: scripts.GoHexa}},
 	{Description: "Modular Clean", Msg: msg.RunningScriptMsg{Script: scripts.GoMC}},
-	{Description: "Model Controller Services", Msg: msg.RunningScriptMsg{Script: scripts.GoClean}},
+	{Description: "Model Controller Services", Msg: msg.RunningScriptMsg{Script: scripts.GoMcs}},
 }
 
 func InitialGoOptionModel() menu.Model {

@@ -4,7 +4,7 @@ Copyright © 2025 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"dragonbytes02/scaff/internal/layout"
+	"dragonbytes02/scaff/internal/app"
 	"fmt"
 	"os"
 
@@ -22,7 +22,7 @@ var createCmd = &cobra.Command{
 
 		projectName := args[0]
 
-		p := tea.NewProgram(layout.InitialApp(projectName))
+		p := tea.NewProgram(app.InitialApp(projectName))
 		if _, err := p.Run(); err != nil {
 			fmt.Printf("Alas, there's been an error: %v", err)
 			os.Exit(1)

@@ -34,7 +34,7 @@ func (j Script) Execute() error {
 }
 
 func InitialScript(name string, url string) IScript {
-	return Script{
+	return &Script{
 		Name: name,
 		Url:  url,
 	}

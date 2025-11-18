@@ -1,10 +1,10 @@
-package layout
+package app
 
 import (
-	Go "dragonbytes02/scaff/internal/application/go"
-	"dragonbytes02/scaff/internal/application/javascript"
-	"dragonbytes02/scaff/internal/application/language"
 	"dragonbytes02/scaff/internal/components/menu"
+	Go "dragonbytes02/scaff/internal/models/go"
+	"dragonbytes02/scaff/internal/models/javascript"
+	"dragonbytes02/scaff/internal/models/language"
 
 	"github.com/charmbracelet/bubbles/spinner"
 )
