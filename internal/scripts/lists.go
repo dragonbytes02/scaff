@@ -23,7 +23,7 @@ const (
 	GoClean // 8
 	GoHexa  // 9
 	GoMC    // 11 (Microservices/Microcomponents)
-	GoEML   // 10 (Model-View-Controller)
+	GoMcs   // 10 (Model-View-Controller)
 )
 
 var ScriptsDetailsUrls = map[ScriptApp]string{
@@ -34,11 +34,10 @@ var ScriptsDetailsUrls = map[ScriptApp]string{
 
 	JsPooClean: "https://github.com/dragonbytes02/js-clean-poo-template.git",
 	JsPooHexa:  "https://github.com/dragonbytes02/js-hexagonal-poo-template.git",
+	JsPooMC:    "https://github.com/dragonbytes02/js-modularclean-poo-template.git",
 	JsPooMcs:   "https://github.com/dragonbytes02/js-mcs-poo-template.git",
-	JsPooMC:    "in process...",
 
-	GoClean: "in process...",
-	GoHexa:  "in process...",
-	GoMC:    "in process...",
-	GoEML:   "in process...",
+	GoHexa: "https://github.com/dragonbytes02/go-hexagonal-template.git",
+	GoMC:   "https://github.com/dragonbytes02/go-modularclean-template.git",
+	GoMcs:  "https://github.com/dragonbytes02/go-mcs-template.git",
 }
