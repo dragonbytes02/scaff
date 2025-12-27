@@ -44,7 +44,7 @@ Choose the method that works best for you.
 If you already have Go installed on your system, you can install the application with a single command
 
 ```bash
-go install [github.com/dragonbytes039/scaff](https://github.com/dragonbytes039/scaff)
+go install github.com/dragonbytes039/scaff@latest
 ```
 
 ### Option 2: Manual Installation
