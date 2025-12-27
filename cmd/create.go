@@ -19,6 +19,7 @@ var createCmd = &cobra.Command{
 	Use:   "create",
 	Short: "create a project",
 	Long:  `Create a project by passing the name as a parameter; if you don't pass a positional parameter as the name, it will fail!`,
+	Args:  cobra.ExactArgs(0),
 	Run: func(cmd *cobra.Command, args []string) {
 
 		p := tea.NewProgram(app.InitialApp(projectName))
