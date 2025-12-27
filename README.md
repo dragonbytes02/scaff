@@ -1,12 +1,13 @@
- # pragmatic architectures
+# Pragmatic architectures
  
- Clean Architecture, DDD, Hexagonal Architecture, MVC, Modular, Onion... Enough already!
+Clean Architecture, DDD, Hexagonal Architecture, MVC, Modular, Onion... Enough already!
 
 Software architectures are fine, but often, for many projects, they become an exercise in excessive reengineering, where you'll waste a lot of time implementing code you don't need. These complex architectures are designed to support large development teams working simultaneously, which is why they are divided into layers and have so many formalities.
 
 When you assimilate the fundamental principles of all these architectures, you realize that applying them partially or adapting them is more than enough for many projects.
 
-# short:
+
+# Short:
 
 Applying Clean Architecture to a small REST API is a complete waste of time. However, not applying its principles to your long-term project (a startup, for example) becomes technical debt that, sooner or later, you will have to pay dearly for.
 
@@ -35,6 +36,41 @@ Scaff offers you different project structures, minimalist configurations, and be
 But first... Learn the principles behind all these architectures. Only then will you understand exactly what you gain and what you lose with each simplification.
 
 
+# How to install
+
+Choose the method that works best for you.
+
+### Option 1: Using Go (Recommended for Developers)
+If you already have Go installed on your system, you can install the application with a single command
+
+```bash
+go install [github.com/dragonbytes039/scaff](https://github.com/dragonbytes039/scaff)
+```
+
+### Option 2: Manual Installation
+If you don't have Go installed, you can download the pre-compiled binary manually:
+
+1.  Go to the [Releases page](https://github.com/dragonbytes039/scaff/releases) and download the file matching your OS (Windows, macOS, or Linux).
+2.  Extract the archive (`.zip` or `.tar.gz`).
+3.  **Add the binary to your PATH:**
+
+
+**For Linux / macOS:**
+Move the file to a directory already in your PATH (like `/usr/local/bin`).
+
+```bash
+sudo mv tu-app /usr/local/bin/
+```
+
+**For Windows:**
+
+- Create a folder (e.g., `C:\Program Files\TuApp`) and place the `.exe` file there.
+- Search for "Edit the system environment variables" in the Start menu.
+- Click **Environment Variables** -> Select **Path** in "System variables" -> Click **Edit**.
+- Click **New** and paste the path to the folder where you placed the `.exe`.
+- Restart your terminal.
+
+
 # We invite you to participate in this project!
 
 Review the different templates and create your pull request with an improvement or a new structure.
@@ -56,16 +92,16 @@ To ensure that contributions maintain Scaff's philosophy, your pull request will
 **Explore the different templates and read their descriptions to understand!**
 
 **Funtional**
-[Clean Arquitecture](https://github.com/dragonbytes039/js-clean-func-template.git)
-[Hexagonal Arquitecture](https://github.com/dragonbytes039/js-hexagonal-func-template.git)
-[Modular Clean](https://github.com/dragonbytes039/js-modularclean-func-template.git)
-[Model Controller Services](https://github.com/dragonbytes039/js-mcs-func-template.git)
+- [Clean Arquitecture](https://github.com/dragonbytes039/js-clean-func-template.git)
+- [Hexagonal Arquitecture](https://github.com/dragonbytes039/js-hexagonal-func-template.git)
+- [Modular Clean](https://github.com/dragonbytes039/js-modularclean-func-template.git)
+- [Model Controller Services](https://github.com/dragonbytes039/js-mcs-func-template.git)
 
 **POO**
-[Clean Arquitecture](https://github.com/dragonbytes039/js-clean-poo-template.git)
-[Hexagonal Arquitecture](https://github.com/dragonbytes039/js-hexagonal-poo-template.git)
-[Modular Clean](https://github.com/dragonbytes039/js-modularclean-poo-template.git)
-[Model Controller Services](https://github.com/dragonbytes039/js-mcs-poo-template.git)
+- [Clean Arquitecture](https://github.com/dragonbytes039/js-clean-poo-template.git)
+- [Hexagonal Arquitecture](https://github.com/dragonbytes039/js-hexagonal-poo-template.git)
+- [Modular Clean](https://github.com/dragonbytes039/js-modularclean-poo-template.git)
+- [Model Controller Services](https://github.com/dragonbytes039/js-mcs-poo-template.git)
 
 
 # Go Templates
@@ -74,6 +110,6 @@ To ensure that contributions maintain Scaff's philosophy, your pull request will
 
 **Explore the different templates and read their descriptions to understand!**
 
-[Hexagonal Arquitecture](https://github.com/dragonbytes039/go-hexagonal-template.git)
-[Modular Clean](https://github.com/dragonbytes039/go-modularclean-template.git)
-[Model Controller Services](https://github.com/dragonbytes039/go-mcs-template.git)
+- [Hexagonal Arquitecture](https://github.com/dragonbytes039/go-hexagonal-template.git)
+- [Modular Clean](https://github.com/dragonbytes039/go-modularclean-template.git)
+- [Model Controller Services](https://github.com/dragonbytes039/go-mcs-template.git)
