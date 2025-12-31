@@ -1,9 +1,9 @@
 package app
 
 import (
-	"dragonbytes039/scaff/fst"
-	"dragonbytes039/scaff/internal/msg"
-	"dragonbytes039/scaff/internal/scripts"
+	"github.com/dragonbytes039/scaff/fst"
+	"github.com/dragonbytes039/scaff/internal/msg"
+	"github.com/dragonbytes039/scaff/internal/scripts"
 
 	tea "github.com/charmbracelet/bubbletea"
 )

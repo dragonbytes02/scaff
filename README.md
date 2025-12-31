@@ -44,13 +44,13 @@ Choose the method that works best for you.
 If you already have Go installed on your system, you can install the application with a single command
 
 ```bash
-go install github.com/dragonbytes039/scaff@latest
+go install github.com/github.com/dragonbytes039/scaff@latest
 ```
 
 ### Option 2: Manual Installation
 If you don't have Go installed, you can download the pre-compiled binary manually:
 
-1.  Go to the [Releases page](https://github.com/dragonbytes039/scaff/releases) and download the file matching your OS (Windows, macOS, or Linux).
+1.  Go to the [Releases page](https://github.com/github.com/dragonbytes039/scaff/releases) and download the file matching your OS (Windows, macOS, or Linux).
 2.  Extract the archive (`.zip` or `.tar.gz`).
 3.  **Add the binary to your PATH:**
 

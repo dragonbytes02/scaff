@@ -1,8 +1,8 @@
 package language
 
 import (
-	"dragonbytes039/scaff/internal/components/menu"
-	"dragonbytes039/scaff/internal/msg"
+	"github.com/dragonbytes039/scaff/internal/components/menu"
+	"github.com/dragonbytes039/scaff/internal/msg"
 
 	"github.com/charmbracelet/lipgloss"
 )

@@ -4,9 +4,10 @@ Copyright © 2025 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"dragonbytes039/scaff/internal/app"
 	"fmt"
 	"os"
+
+	"github.com/dragonbytes039/scaff/internal/app"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"

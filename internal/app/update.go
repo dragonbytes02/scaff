@@ -1,8 +1,8 @@
 package app
 
 import (
-	"dragonbytes039/scaff/internal/components/menu"
-	msgs "dragonbytes039/scaff/internal/msg"
+	"github.com/dragonbytes039/scaff/internal/components/menu"
+	msgs "github.com/dragonbytes039/scaff/internal/msg"
 
 	"github.com/charmbracelet/bubbles/spinner"
 	tea "github.com/charmbracelet/bubbletea"
