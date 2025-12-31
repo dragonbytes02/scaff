@@ -1,5 +1,5 @@
 import type { Example } from "../domain/entities.js";
-import type { DbRepository } from "./db.interfaces.js";
+import type { DbRepository } from "../ports/db.repository.js";
 
 
 export class MongoRepo  implements DbRepository{

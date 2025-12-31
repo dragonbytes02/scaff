@@ -12,7 +12,7 @@ import (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:     "scaff",
-	Version: "1.0.39",
+	Version: "1.0.40",
 	Short:   "clean architecture templates with a pragmatic approach",
 	Long: `clean architecture templates with a pragmatic approach
 

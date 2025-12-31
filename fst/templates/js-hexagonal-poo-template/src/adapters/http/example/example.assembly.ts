@@ -8,6 +8,8 @@ const exampleRepositoryAssembly = new ExamplePostgresRepository()
 
 const createExampleUseCase = new CreateExampleUseCase(exampleRepositoryAssembly)
 
-export const createExampleControllerBuild = new CreateExampleController(createExampleUseCase)
+const createExample = new CreateExampleController(createExampleUseCase)
 
- 
+export default { 
+    createExample, 
+}
